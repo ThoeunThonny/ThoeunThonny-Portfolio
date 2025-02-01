@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/ny1.jpg" type="image">
+    <title>Thoeun Thonny Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body class="bg-gray-900 text-white font-serif italic h-auto">
+   
+    <header class="flex justify-between items-center px-6 lg:mx-30  md:px-12 py-6">
+        <h1 class="text-4xl font-bold ">THONNY<span class="text-teal-500 font-bold text-6xl animate-ping">.</span></h1>
+        <nav>
+            <ul class="hidden md:flex lg:space-x-12 md:space-x-6 text-lg lg:mx-14  ">
+                <li><a href="../index.html" class="hover:text-teal-500">Home</a></li>
+                <li><a href="./aboutme.html" class="hover:text-teal-500">About me</a></li>
+                <li><a href="./myskill.html" class="text-teal-500">My skill</a></li>
+                <li><a href="./mywork.html" class="hover:text-teal-500">My work</a></li>
+                <li><a href="./connect.html" class="hover:text-teal-500">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="menu-btn" class="md:hidden text-xl">&#9776;</button>
+
+        <nav id="mobile-menu" class="hidden absolute top-16 left-0 w-full bg-black text-white flex flex-col space-y-4 py-4 items-center mt-6">
+            <a href="http://127.0.0.1:5501/index.html" class="hover:text-teal-500">Home</a>
+            <a href="http://127.0.0.1:5501/html/aboutme.html" class="hover:text-teal-500">About me</a>
+            <a href="http://127.0.0.1:5501/html/myskill.html" class="text-teal-500">My skill</a>
+            <a href="http://127.0.0.1:5501/html/mywork.html" class="hover:text-teal-500">My work</a>
+            <a href="http://127.0.0.1:5501/html/connect.html" class="hover:text-teal-500">connect</a>
+        </nav>
+    </header>
+        
+        <main class="flex-1 p-8">
+            
+            <div class="bg-gray-800 p-6 rounded-lg flex items-center mb-16  lg:h-[550px] md:h-[400px] bg-cover bg-center  " style="background-image: url('../img/is\ me\ \(1\).png');">
+                <div class="w-1/2">
+                    <h1 class="lg:text-6xl font-bold lg:ml-24 md:text-4xl text-teal-500 ">This Is My Skill</h1>
+                    <p class="text-gray-400 mt-4 lg:ml-24 lg:mt-10 lg:text-4xl md:text-3xl">Computer And Language Skill</p>
+                    <a href="https://t.me/nyfinker"><button class="mt-4 px-6 py-2 bg-teal-500 text-white rounded-lg hover:bg-gray-900 lg:ml-24 lg:mt-10">Apply</button></a>
+                </div>
+                
+            </div>
+
+           
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h2 class="text-xl font-bold">Web Front-end</h2>
+                    <p class="text-gray-400 mt-2">HTML, CSS, JavaScript</p>
+                    <p class="text-gray-400 mt-2">Tailwindcss, Reactjs</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h2 class="text-xl font-bold">Microsoft Ofice</h2>
+                    <p class="text-gray-400 mt-2">Word, Excel, Power Point</p>
+                    
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h2 class="text-xl font-bold">Graphice Desing</h2>
+                    <p class="text-gray-400 mt-2">Photshop</p>
+                    <p class="text-gray-400 mt-2">Coreldraw</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h2 class="text-xl font-bold">Language</h2>
+                    <p class="text-gray-400 mt-2">English : Medium</p>
+                    <p class="text-gray-400 mt-2">Khmer : Good</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="https://www.facebook.com/bro.nyslot?mibextid=LQQJ4d" class="text-white text-2xl hover:text-gray-400">
+                    <i class="bx bxl-facebook"></i>
+                </a>
+                <a href="https://www.facebook.com/bro.nyslot?mibextid=LQQJ4d" class="text-white text-2xl hover:text-gray-400">
+                    <i class="bx bxl-instagram"></i>
+                </a>
+                <a href="https://t.me/nyfinker" class="text-white text-2xl hover:text-gray-400">
+                    <i class="bx bxl-telegram"></i>
+                </a>
+               
+            </div>
+          
+            <p class="text-sm text-gray-400">Copyright &copy;2025; Designed by <span class="text-white">Thoeun Thonny</span></p>
+        </div>
+    </footer>
+    
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+     
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+     </script>
+</body>
+</html>
